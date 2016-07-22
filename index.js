@@ -1,6 +1,6 @@
-var express = require('express')
-  , http = require('http')
-  , config = require('./configuration');
+var express = require('express');
+var http = require('http');
+var config = require('./configuration');
 
 var app = express();
 var server = app.listen(config.port);
