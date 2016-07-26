@@ -7,14 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-  "type": "git",
-  "url": "git+ssh://git@github.com/zwachtel11/mysite.git"
-},
+    "type": "git",
+    "url": "git+ssh://git@github.com/zwachtel11/mysite.git"
+  },
   "author": "zach wachtel",
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
-    "pug": "^2.0.0-beta4"
+    "nib": "^1.1.0",
+    "pug": "^2.0.0-beta4",
+    "stylus": "^0.54.5"
   },
   "devDependencies": {
     "eslint": "^3.1.1"
