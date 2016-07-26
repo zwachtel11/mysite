@@ -1,14 +1,22 @@
 {
   "name": "mysite",
   "version": "1.0.0",
-  "description": "",
+  "description": "my first website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+  "type": "git",
+  "url": "git+ssh://git@github.com/zwachtel11/mysite.git"
+},
+  "author": "zach wachtel",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta4"
+  },
+  "devDependencies": {
+    "eslint": "^3.1.1"
   }
 }

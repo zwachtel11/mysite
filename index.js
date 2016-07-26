@@ -1,13 +1,17 @@
-var express = require('express');
-var http = require('http');
-var config = require('./configuration');
+'use strict'
 
-var app = express();
-var server = app.listen(config.port);
-console.log("Express server listening on port "+ config.port);
+const express = require('express')
+const config = require('./configuration')
 
-app.get('/',index);
+const app = express()
 
-function index(req,res){
-   res.send('4dbz in a cadilac: Coming Soon...!');
- }
+app.set('views', './views')
+app.set('view engine', 'pug')
+
+const index = function(req, res) {
+  res.send('4dbz in a cadilac: Coming Soon...!')
+}
+
+app.get('/', index)
+
+app.listen(config.port)
