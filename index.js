@@ -24,7 +24,7 @@ app.use(stylus.middleware({
 app.use(express.static('./public'))
 
 const index = function(req, res) {
-  res.render('home', {
+  res.render('index', {
     title: 'Coming Soon'
   })
 }
