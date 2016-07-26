@@ -17,11 +17,11 @@ app.set('views', './views')
 app.set('view engine', 'pug')
 app.use(express.logger('dev'))
 app.use(stylus.middleware({
-  src: __dirname + '/public'
-  , compile: compile
+  src: './public',
+  compile: compile
 }))
 
-app.use(express.static(__dirname + '/public'))
+app.use(express.static('./public'))
 
 const index = function(req, res) {
   res.render('home', {
