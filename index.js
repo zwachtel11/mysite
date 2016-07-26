@@ -9,5 +9,5 @@ console.log("Express server listening on port "+ config.port);
 app.get('/',index);
 
 function index(req,res){
-   res.send('Hellooooo0123 ' + config.say);
+   res.send('4dbz in a cadilac: Coming Soon...');
  }
