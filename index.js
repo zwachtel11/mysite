@@ -15,7 +15,7 @@ const compile = function(str, path) {
 
 app.set('views', './views')
 app.set('view engine', 'pug')
-app.use(express.logger('dev'))
+// app.use(express.logger('dev'))
 app.use(stylus.middleware({
   src: './public',
   compile: compile
