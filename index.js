@@ -30,4 +30,5 @@ const index = function(req, res) {
 }
 
 app.get('/', index)
+app.get('/upNext', 'Hello')
 app.listen(config.port)
