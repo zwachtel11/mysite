@@ -30,6 +30,4 @@ const index = function(req, res) {
 }
 
 app.get('/', index)
-app.get('/secure', 'coming soon')
-
 app.listen(config.port)
