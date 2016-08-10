@@ -3,6 +3,7 @@
 const express = require('express')
 const stylus = require('stylus')
 const nib = require('nib')
+const MongoClient = require('mongodb').MongoClient
 const config = require('./configuration')
 
 const app = express()
@@ -15,7 +16,6 @@ const compile = function(str, path) {
 
 app.set('views', './views')
 app.set('view engine', 'pug')
-// app.use(express.logger('dev'))
 app.use(stylus.middleware({
   src: './public',
   compile: compile
@@ -30,5 +30,6 @@ const index = function(req, res) {
 }
 
 app.get('/', index)
+app.get('/secure', 'coming soon')
 
 app.listen(config.port)
