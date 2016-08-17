@@ -4,7 +4,7 @@ const router = express.Router()
 
 /* GET users listing. */
 router.get('/', function(req, res) {
-  res.render('index', {title: 'Dev'})
+  res.render('dev', {title: 'Dev'})
 })
 
 module.exports = router
