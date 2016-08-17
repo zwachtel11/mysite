@@ -27,10 +27,6 @@ const normalizePort = function(val) {
   return false
 }
 
-/**
- * Get port from environment and store in Express.
- */
-
 const port = normalizePort(config.port || '3000')
 
 /**
