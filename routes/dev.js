@@ -1,9 +1,10 @@
 'use strict'
-const router = require('express').router
+const express = require('express')
+const router = express.Router()
 
 /* GET users listing. */
 router.get('/', function(req, res) {
-  res.render('made it')
+  res.send('made it')
 })
 
 module.exports = router
