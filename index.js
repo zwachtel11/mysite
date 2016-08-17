@@ -3,7 +3,6 @@
 const express = require('express')
 const stylus = require('stylus')
 const nib = require('nib')
-const MongoClient = require('mongodb').MongoClient
 const config = require('./configuration')
 const dev = require('./routes/dev')
 
