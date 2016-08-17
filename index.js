@@ -31,5 +31,5 @@ const index = function(req, res) {
 }
 
 app.get('/', index)
-app.use('/test', dev)
+app.use('/dev', dev)
 app.listen(config.port)
