@@ -5,6 +5,7 @@ const stylus = require('stylus')
 const nib = require('nib')
 const MongoClient = require('mongodb').MongoClient
 const config = require('./configuration')
+const dev = require('./routes/dev')
 
 const app = express()
 
@@ -30,4 +31,5 @@ const index = function(req, res) {
 }
 
 app.get('/', index)
+app.use('/test', dev)
 app.listen(config.port)
