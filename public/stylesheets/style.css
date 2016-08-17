@@ -103,6 +103,125 @@ a img {
  * Store the main color and
  * background color as variables
  */
+.menusection {
+  -webkit-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -ms-transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background-color: rgba(0,0,0,0.85);
+  position: absolute;
+  z-index: 1000;
+  font-size: 24px;
+}
+.showmenu {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  z-index: 100;
+}
+.icons8-Menu {
+  width: 40px;
+}
+.icons8-Menu path {
+  fill: #f00;
+  stroke: #4682b4;
+}
+nav ul {
+  display: block;
+  padding: 0;
+}
+nav ul li {
+  display: block;
+  text-align: center;
+  padding: 0.5rem 0rem;
+  margin: 0;
+}
+nav ul li a {
+  color: #999;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover,
+nav ul li a:active {
+  color: #fff;
+}
+section {
+  width: 90%;
+  margin-left: 5%;
+}
+section h1 {
+  line-height: 3em;
+  border-bottom: 1px solid #e1e1e1;
+}
+section p {
+/* width 90% */
+  line-height: 1.6em;
+  letter-spacing: 0.075em;
+  color: #333;
+}
+section h1,
+section p {
+  margin: auto;
+  padding: 1rem;
+}
+@media screen and (min-width: 391px) and (max-width: 400px) {
+  .menusection {
+    width: 100%;
+    padding: 10rem 0rem 1rem 0rem;
+    top: -1000px;
+  }
+  .menusection.show {
+    top: -10rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  .menusection {
+    width: 80%;
+    height: 100%;
+    max-width: 340px;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    left: -330px;
+  }
+  .menusection.show {
+    left: -2rem;
+  }
+}
+@media screen and (min-width: 401px) {
+  .showmenu {
+    display: none;
+  }
+  .menusection {
+    width: 100%;
+    background-color: #ccc;
+    padding: 0.5rem 0rem;
+    position: relative;
+  }
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: 90%;
+    margin-left: 5%;
+  }
+  nav ul {
+    margin: 0;
+  }
+  nav ul li {
+    display: inline;
+    padding: 0.5rem 1rem 0.5rem 0;
+    font-size: 18px;
+  }
+  nav ul li a:hover {
+    color: #333;
+  }
+  section {
+    max-width: 1200px;
+    margin: 0 auto;
+/* h1, p */
+  }
+}
 body {
   font-family: 'Georgia';
   background-color: #fff;

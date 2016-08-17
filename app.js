@@ -8,8 +8,10 @@ const favicon = require('serve-favicon')
 const logger = require('morgan')
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
-const fun = require('./routes/dev')
+const fun = require('./routes/fun')
 const routes = require('./routes/index')
+const contact = require('./routes/contact')
+const aboutme = require('./routes/aboutme')
 
 const app = express()
 
@@ -36,6 +38,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', routes)
 app.use('/fun', fun)
+app.use('/aboutme', aboutme)
+app.use('/contact', contact)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
