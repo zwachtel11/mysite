@@ -1,9 +1,9 @@
 'use strict'
 const router = require('express').router
 
-/* GET users listing. */
+/* GET home page. */
 router.get('/', function(req, res) {
-  res.render('made it')
+  res.render('index', {title: 'Express'})
 })
 
 module.exports = router
