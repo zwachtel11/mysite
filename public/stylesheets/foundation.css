@@ -15,7 +15,7 @@
      *    IE on Windows Phone and in iOS.
      */
 html {
-  font-family: sans-serif;
+  font-family: 'Work Sans',sans-serif;
   /* 1 */
   line-height: 1.15;
   /* 2 */
@@ -438,7 +438,7 @@ body {
   margin: 0;
   padding: 0;
   background: #729f98;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Work Sans", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #f0eceb;
@@ -1327,17 +1327,23 @@ h1 {
   font-size: 1.5rem;
   line-height: 1.4;
   margin-top: 0;
+  font-family: "Work Sans";
+  color: #f0eceb;
+  font-weight: bolder;
   margin-bottom: 0.5rem; }
 
 h2 {
   font-size: 1.25rem;
   line-height: 1.4;
+  font-family: "Work Sans";
+  color: #f0eceb;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
 h3 {
   font-size: 1.1875rem;
   line-height: 1.4;
+  font-family: "Work Sans";
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
@@ -1456,7 +1462,7 @@ kbd {
   margin: 0;
   padding: 0.125rem 0.25rem 0;
   background-color: #e6e6e6;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-family: "Work Sans", Consolas, "Liberation Mono", Courier, monospace;
   color: #0a0a0a; }
 
 .subheader {
