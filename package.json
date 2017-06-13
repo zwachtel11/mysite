@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
+    "consolidate": "^0.14.5",
     "cookie-parser": "^1.4.3",
     "debug": "^2.2.0",
     "express": "^4.14.0",
@@ -22,7 +23,8 @@
     "nib": "^1.1.0",
     "pug": "^2.0.0-beta4",
     "serve-favicon": "^2.3.0",
-    "stylus": "^0.54.5"
+    "stylus": "^0.54.5",
+    "swig": "^1.4.2"
   },
   "devDependencies": {
     "eslint": "^3.1.1"

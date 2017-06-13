@@ -8,6 +8,7 @@ const favicon = require('serve-favicon')
 const logger = require('morgan')
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
+const cons = require('consolidate')
 const fun = require('./routes/fun')
 const routes = require('./routes/index')
 const contact = require('./routes/contact')
@@ -15,18 +16,9 @@ const aboutme = require('./routes/aboutme')
 
 const app = express()
 
-const compile = function(str, path) {
-  return stylus(str)
-    .set('filename', path)
-    .use(nib())
-}
-
-app.set('views', './views')
-app.set('view engine', 'pug')
-app.use(stylus.middleware({
-  src: './public',
-  compile: compile
-}))
+app.engine('html', cons.swig)
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'html')
 
 app.use(express.static('./public'))
 
